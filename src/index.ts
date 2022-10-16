@@ -4,7 +4,7 @@ import { buildSchema } from "graphql";
 import { graphQLResolvers, graphQLSchema } from "./schema";
 
 const app = express();
-const port = "8080";
+const port = "8081";
 
 app.use(
   "/graphql",

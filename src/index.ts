@@ -14,6 +14,9 @@ app.use(
     graphiql: true,
   })
 );
+app.get("/", (req, res) => {
+  res.send("I'm awake");
+});
 
 app.use((err: any, _req: any, res: any, _next: any) => {
   console.error(err.stack);

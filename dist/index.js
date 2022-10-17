@@ -11,7 +11,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
-app.use("/graphql", (0, express_graphql_1.graphqlHTTP)({
+app.use("/api", (0, express_graphql_1.graphqlHTTP)({
     schema: (0, graphql_1.buildSchema)(schema_1.graphQLSchema),
     rootValue: schema_1.graphQLResolvers,
     graphiql: true,

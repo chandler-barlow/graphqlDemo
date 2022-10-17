@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT;
 
 app.use(
-  "/graphql",
+  "/api",
   graphqlHTTP({
     schema: buildSchema(graphQLSchema),
     rootValue: graphQLResolvers,

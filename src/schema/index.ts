@@ -28,6 +28,7 @@ export const graphQLSchema: string = genSchema(
   graphqlQueries,
   graphqlMutations
 );
+
 export const graphQLResolvers = {
   ...appResolver,
   ...eventResolvers,
